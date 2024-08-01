@@ -70,6 +70,6 @@ To clone and run this project, you will need Git installed on your computer. Fro
 $ git clone https://github.com/sriramakrishna2001/Project1_Ecommerce-Project.git
 
 # Go into the repository
-$ cd Project1_Ecommerce-Project
+$ cd project
 
 # Open the HTML files in your browser to view the pages
