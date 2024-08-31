@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="level.css">
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <div class="header">
+        <img src="techhub18.png" alt="Logo" class="logo">
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search products...">
+            <select id="filterSelect">
+                <option value="all">All Products</option>
+                <option value="laptop">Laptop</option>
+                <option value="camera">Camera</option>
+                <option value="phone">Phone</option>
+                <option value="headphones">Headphones</option>
+                <option value="smartwatch">Smart Watch</option>
+                <option value="vrglasses">VR Glasses</option>
+            </select>
+        </div>
+        <div class="sort-filter">
+            <select id="sortSelect">
+                <option value="default">Sort by</option>
+                <option value="priceLowHigh">Price: Low to High</option>
+                <option value="priceHighLow">Price: High to Low</option>
+                <option value="titleAsc">Title: A to Z</option>
+                <option value="titleDesc">Title: Z to A</option>
+            </select>
+        </div>
+
+
+       
+
+
+
+
+
+
+        <div class="cart">
+            <i class="fa-solid fa-cart-shopping"></i><p id="count">0</p>
+        </div>
+    </div>
+
+
+
+   <h3>New Arrivals</h3> 
+    <div class="categoty-section">
+        <ul>
+            <li><img src="laptop hp.jpeg" alt="Laptop HP"></li>
+            <li><img src="apple phone.jpeg" alt="Apple Phone"></li>
+            <li><img src="Boat earburds.jpeg" alt="Boat Earbuds"></li>
+            <li><img src="mini speaker.jpeg" alt="Mini Speaker"></li>
+            <li><img src="pendrive1.jpeg" alt="Pendrive"></li>
+            <li><img src="camera.jpeg" alt="Camera"></li>
+            <li><img src="vr 3d glasses.jpeg" alt="VR 3D Glasses"></li>
+            <li><img src="boat smart watch.jpeg" alt="Boat Smart Watch"></li>
+            <li><img src="memory card.jpeg" alt="Memory Card"></li>
+            <li><img src="headset4.jpeg" alt="Headset"></li>
+        </ul>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="container">
+        <div id="root"></div>
+        <div class="sidebar">
+            <div class="head"><p>My Cart</p></div>
+            <div id="cartItem">Your cart is empty</div>
+            <div class="foot">
+                <h3>Total</h3>
+                <h2 id="total">₹ 0.00</h2>
+                <button id="checkoutButton">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- Payment Method Section -->
+    <div class="payment-section" id="paymentSection" style="display: none;">
+        <h2>Payment Method</h2>
+        <form id="paymentForm">
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" required><br>
+            <label for="expiryDate">Expiry Date:</label>
+            <input type="text" id="expiryDate" required><br>
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" required><br>
+            <button type="submit">Pay Now</button>
+        </form>
+    </div>
+    
+    <!-- Order History Section -->
+    <div class="order-history" id="orderHistory" style="display: none;">
+        <h2>Order History</h2>
+        <div id="orderItems"></div>
+    </div>
+
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h2>About Us</h2>
+                <p>TechHub is your one-stop shop for the latest in technology and electronics. From laptops and smartphones to smart watches and VR glasses, we bring you the newest and most innovative products on the market.</p>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <p>Email: <a href="mailto:support@techhub.com">support@techhub.com</a></p>
+                <p>Phone: +1 234 567 890</p>
+                <p>Address: 123 TechHub Avenue, Silicon Valley, CA 94043</p>
+            </div>
+            <div class="footer-section follow">
+                <h2>Follow Us</h2>
+                <p>
+                    <a href="#">Facebook</a> | 
+                    <a href="#">Twitter</a> | 
+                    <a href="#">Instagram</a>
+                </p>
+            </div>
+            <div class="footer-section newsletter">
+                <h2>Newsletter</h2>
+                <p>Subscribe to our newsletter for the latest updates and offers:</p>
+                <form>
+                    <input type="email" placeholder="Your email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 TechHub. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+    <script src="level.js"></script>
+</body>
+</html>
