@@ -133,6 +133,9 @@
 
 .banner .btn:hover {
     background-color: #c82333;
-}
+ 
+        color: aquamarine; /* Add hover effect */
+    }
+
 
 
