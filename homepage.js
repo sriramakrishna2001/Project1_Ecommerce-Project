@@ -30,11 +30,51 @@ function renderProducts(products) {
                     <h2>₹ ${price.toLocaleString('en-IN')}.00</h2>
                     <button onclick='addtocart(${index}, event)'>Add to cart</button>
                 </div>
+
+
+
+ <div class='rating'>
+                    ${[5, 4, 3, 2, 1].map(r => `
+                        <span class='star' data-index='${index}' data-rating='${r}'>★</span>
+                    `).join('')}
+                </div>
+                <div class='review'>
+                    <textarea id='reviewInput${index}' placeholder='Write a review...'></textarea>
+                    <button class='submit-review' data-index='${index}'>Submit Review</button>
+                </div>
+                <div id='reviews${index}' class='reviews'></div>
+
             </div>
         `;
     }).join('');
-}
 
+
+
+ // Attach event listeners for Add to Cart buttons
+ document.querySelectorAll('.add-to-cart').forEach(button => {
+    button.addEventListener('click', function() {
+        const index = this.getAttribute('data-index');
+        addToCart(index);
+    });
+});
+
+// Attach event listeners for star rating
+document.querySelectorAll('.star').forEach(star => {
+    star.addEventListener('click', function() {
+        const index = this.getAttribute('data-index');
+        const rating = this.getAttribute('data-rating');
+        rateProduct(index, rating);
+    });
+});
+
+// Attach event listeners for review submission
+document.querySelectorAll('.submit-review').forEach(button => {
+    button.addEventListener('click', function() {
+        const index = this.getAttribute('data-index');
+        submitReview(index);
+    });
+});
+}
 
 
 
@@ -85,13 +125,6 @@ renderProducts(filteredProducts);
 
 
 
-
-
-
-
-
-
-
 function addtocart(index, event) {
     cart.push({ ...filteredProducts[index] });
     displayCart();
@@ -134,10 +167,6 @@ function displayCart() {
         document.getElementById("total").innerText = "₹ " + total.toLocaleString('en-IN') + ".00";
     }
 }
-
-
-
-
 
 
 
@@ -202,6 +231,5 @@ document.getElementById('paymentForm').addEventListener('submit', function(event
 // Initial render
 renderProducts(filteredProducts);
 displayCart();
-
 
 

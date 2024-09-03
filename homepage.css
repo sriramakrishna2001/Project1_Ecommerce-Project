@@ -405,7 +405,7 @@ h3 {
 
 
 footer {
-    background-color: #333;
+    background-color:cadetblue;
     color: #fff;
     padding: 40px 0;
 }
@@ -426,6 +426,7 @@ footer {
 .footer-section h2 {
     font-size: 1.5rem;
     margin-bottom: 15px;
+    color: #ff9900;
 }
 
 .footer-section p {
@@ -503,3 +504,60 @@ footer {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+/* Rating Stars */
+.rating {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.rating span {
+    font-size: 24px;
+    cursor: pointer;
+    color: #ccc;
+}
+
+.rating span:hover,
+.rating span:hover ~ span {
+    color: gold;
+}
+
+/* Review Section */
+.review {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.review textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.review button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #27ae60;
+    color: white;
+    cursor: pointer;
+}
+
+.reviews {
+    margin-top: 10px;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
