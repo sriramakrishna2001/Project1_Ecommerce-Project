@@ -92,6 +92,12 @@
     margin-bottom: 15px;
     animation: slideInLeft 1.5s ease-in-out;
 }
+.banner strong{
+    color: #ff9900;
+}
+
+
+
 
 .banner ul {
     list-style: none;
