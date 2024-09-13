@@ -111,7 +111,7 @@ h3 {
 }
 
 .category-section ul li:hover {
-    transform: scale(1.05);
+    transform: scale(1.25);
 }
 
 /* Container Styles */
