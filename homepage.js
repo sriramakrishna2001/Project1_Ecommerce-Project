@@ -1,10 +1,10 @@
 // Simulated product data
 const products = [
-    { id: 0, image: 'assests/Modern-models-of-laptop-on-transparent-background-PNG.png', title: 'Laptop', price: 49000, video: 'https://www.youtube.com/embed/dQw4w9WgXcQ' },
-    { id: 1, image: 'assests/Realistic-digital-camera-vector-PNG.png', title: 'DSLR Camera', price: 30000, video: 'https://www.youtube.com/embed/tgbNymZ7vqY' },
-    { id: 2, image: 'assests/Samsung-glaxy-phone-isolated-on-transparent-background-PNG.png', title: 'Smart Phone', price: 20000, video: 'https://www.youtube.com/embed/3JZ_D3ELwOQ' },
-    { id: 3, image: 'assests/Black-and-red-gaming-headphones-on-transparent-background-PNG.png', title: 'Head Phones', price: 5000, video: 'https://www.youtube.com/embed/YbJOTdZBX1g' },
-    { id: 4, image: 'assests/kindpng_6138253.png', title: 'Smart Watch', price: 7000, video: 'https://www.youtube.com/embed/0b6K5y6xb5U' },
+    { id: 0, image: 'assests/Modern-models-of-laptop-on-transparent-background-PNG.png', title: 'Laptop', price: 49000, video: 'https://www.youtube.com/watch?v=-k3x_1pAs6Q' },
+    { id: 1, image: 'assests/Realistic-digital-camera-vector-PNG.png', title: 'DSLR Camera', price: 30000, video: 'https://www.youtube.com/watch?v=Esk0ZKUPxbI' },
+    { id: 2, image: 'assests/Samsung-glaxy-phone-isolated-on-transparent-background-PNG.png', title: 'Smart Phone', price: 20000, video: 'https://www.youtube.com/watch?v=QYaXJfPGEEk' },
+    { id: 3, image: 'assests/Black-and-red-gaming-headphones-on-transparent-background-PNG.png', title: 'Head Phones', price: 5000, video: 'https://www.youtube.com/watch?v=0rteUqa6xCU' },
+    { id: 4, image: 'assests/kindpng_6138253.png', title: 'Smart Watch', price: 7000, video: 'https://www.youtube.com/watch?v=KIb12hpkjRg' },
     { id: 5, image: 'assests/kindpng_7085209.png', title: 'VR 3D Glasses', price: 1500, video: 'https://www.youtube.com/embed/eYTT8A7COFs' }
 ];
 
